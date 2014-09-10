@@ -1,7 +1,7 @@
 FROM base/archlinux:latest
 RUN pacman-key --init
 RUN pacman-key --populate archlinux
-RUN pacman -Sy sed php php-apache apache php-pear php-gd php-intl php-sqlite sqlite exiv2 wget --noconfirm --ignore filesystem
+RUN pacman -Syu sed php php-apache apache php-pear php-gd php-intl php-sqlite sqlite exiv2 wget --noconfirm --ignore filesystem
 RUN wget https://download.owncloud.org/community/owncloud-7.0.2.tar.bz2
 RUN tar xf owncloud-7.0.2.tar.bz2
 RUN mkdir owncloud/data
