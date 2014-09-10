@@ -1,2 +1,2 @@
-docker-arch-owncloud
+ownCloud Version : 7.0.2
 ====================
