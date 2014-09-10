@@ -1,4 +1,5 @@
 FROM base/archlinux:latest
+MAINTAINER UserTaken <elysian@live.com>
 RUN pacman-key --init
 RUN pacman-key --populate archlinux
 RUN pacman -Syu sed php php-apache apache php-pear php-gd php-intl php-sqlite sqlite exiv2 wget --noconfirm --ignore filesystem
