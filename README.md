@@ -1,2 +1,2 @@
-ownCloud Version : 7.0.2
+ownCloud Version 7.0.2
 ====================
