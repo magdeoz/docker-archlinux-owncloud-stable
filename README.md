@@ -15,3 +15,4 @@ docker build --rm -t usertaken/archlinux-owncloud-stable github.com/UserTaken/do
 Run
 ```
 docker run  -p 80:80 usertaken/docker-archlinux-owncloud-stable
+```
