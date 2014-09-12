@@ -9,7 +9,7 @@ docker pull usertaken/archlinux-owncloud-stable
 
 Build yourself
 ```
-docker build --rm -t archlinux-owncloud-stable github.com/UserTaken/docker-archlinux-owncloud-stable
+docker build --rm -t usertaken/archlinux-owncloud-stable github.com/UserTaken/docker-archlinux-owncloud-stable
 ```
 
 Run
