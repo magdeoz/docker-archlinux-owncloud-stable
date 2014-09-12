@@ -2,6 +2,7 @@ ownCloud Version 7.0.2
 ====================
 Arch Linux ownCloud Stable
 
+From Docker Index
 ```
 docker pull usertaken/archlinux-owncloud-stable
 ```
