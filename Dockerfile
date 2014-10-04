@@ -6,7 +6,8 @@ RUN curl https://download.owncloud.org/community/owncloud-7.0.2.tar.bz2 | tar xj
 	mkdir -p owncloud/data/tmp && \
 	chmod 770 owncloud/data && \
 	mv owncloud/* /srv/http/ && \
-	chown -R http:http /srv/http
+	chown -R http:http /srv/http && \
+	rm -rf owncloud
 
 ADD php.ini /etc/php/
 ADD httpd.conf /etc/httpd/conf/
