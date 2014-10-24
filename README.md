@@ -3,7 +3,7 @@ ownCloud Version 7.0.2
 
 Arch Linux ownCloud Stable
 
-Enable port 80
+Enable port 80 and/or 443
 
 From Docker Index
 ```
@@ -17,5 +17,5 @@ docker build --rm -t usertaken/archlinux-owncloud-stable github.com/UserTaken/do
 
 Run
 ```
-docker run -d -p 80:80 usertaken/archlinux-owncloud-stable
+docker run -d -p 80:80 -p 443:443 usertaken/archlinux-owncloud-stable
 ```
