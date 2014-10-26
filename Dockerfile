@@ -14,7 +14,7 @@ RUN curl https://download.owncloud.org/community/owncloud-7.0.2.tar.bz2 | tar xj
 RUN cd /etc/httpd/conf && \
 	openssl genpkey -algorithm RSA -pkeyopt rsa_keygen_bits:2048 -out server.key && \
 	chmod 600 server.key && \
-	openssl req -new -batch -subj '/CN=owncloud' -key server.key -out server.csr  && \
+	openssl req -new -batch -subj '/CN=ownCloud' -key server.key -out server.csr  && \
 	openssl x509 -req -days 3650 -in server.csr -signkey server.key -out server.crt
 	
 ADD php.ini /etc/php/
