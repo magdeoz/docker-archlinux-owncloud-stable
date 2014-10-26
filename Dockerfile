@@ -1,6 +1,6 @@
 FROM base/archlinux:latest
 MAINTAINER UserTaken <elysian@live.com>
-RUN pacman -Syu php-apache php-pear php-gd php-intl php-sqlite php-mcrypt exiv2 \
+RUN pacman -Syu php-apache php-gd php-intl php-sqlite php-mcrypt exiv2 \
 	--noconfirm --ignore filesystem && \
 	rm /var/cache/pacman/pkg/*
 RUN curl https://download.owncloud.org/community/owncloud-7.0.2.tar.bz2 | tar xj && \
