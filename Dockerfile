@@ -19,4 +19,4 @@ RUN cd /etc/httpd/conf && \
 ADD php.ini /etc/php/
 ADD httpd.conf /etc/httpd/conf/
 EXPOSE 80 443
-CMD ["/usr/sbin/apachectl", "-D", "FOREGROUND"]
+CMD /usr/bin/httpd && tail -f /var/log/httpd/access_log /var/log/httpd/error_log
