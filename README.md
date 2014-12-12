@@ -1,4 +1,4 @@
-ownCloud Version 7.0.3
+ownCloud Version 7.0.4
 ======================
 
 Arch Linux ownCloud Stable
