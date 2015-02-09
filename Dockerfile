@@ -1,12 +1,12 @@
 FROM base/archlinux:latest
 MAINTAINER UserTaken <elysian@live.com>
-RUN pacman -Sy php-apache php-gd php-intl php-sqlite php-mcrypt exiv2 \
-	--noconfirm --ignore filesystem && rm /var/cache/pacman/pkg/*
+RUN pacman -Sy php-apache php-gd php-intl php-sqlite php-mcrypt exiv2 openssl \
+	--noconfirm && rm /var/cache/pacman/pkg/*
 
-RUN curl https://download.owncloud.org/community/owncloud-7.0.4.tar.bz2 | tar xj && \
+RUN curl https://download.owncloud.org/community/owncloud-8.0.0.tar.bz2 | tar xj && \
 	mkdir -p owncloud/data/tmp && \
 	chmod 770 owncloud/data && \
-	mv owncloud/* /srv/http/ && \
+	mv owncloud/* owncloud/.htaccess /srv/http/ && \
 	rm -rf owncloud && \
 	chown -R http:http /srv/http
 

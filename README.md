@@ -1,4 +1,4 @@
-ownCloud Version 7.0.4
+ownCloud Version 8.0
 ======================
 
 Arch Linux ownCloud Stable
@@ -17,5 +17,5 @@ docker build --rm -t usertaken/archlinux-owncloud-stable github.com/UserTaken/do
 
 Run
 ```
-docker run -d --name owncloud --restart always -p 80:80 -p 443:443 usertaken/archlinux-owncloud-stable
+docker run -d -p 80:80 -p 443:443 --name owncloud --restart always usertaken/archlinux-owncloud-stable
 ```
