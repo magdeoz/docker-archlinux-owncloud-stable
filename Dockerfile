@@ -1,5 +1,6 @@
 FROM base/archlinux:latest
 MAINTAINER UserTaken <elysian@live.com>
+MAINTAINER Magdeoz <hackmagodeoz@gmail.com>
 RUN pacman -Sy php-apache php-gd php-intl php-sqlite php-mcrypt exiv2 openssl \
 	--noconfirm && rm /var/cache/pacman/pkg/*
 
