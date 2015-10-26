@@ -3,7 +3,7 @@ MAINTAINER UserTaken <elysian@live.com>
 RUN pacman -Sy php-apache php-gd php-intl php-sqlite php-mcrypt exiv2 openssl \
 	--noconfirm && rm /var/cache/pacman/pkg/*
 
-RUN curl https://download.owncloud.org/community/owncloud-8.0.0.tar.bz2 | tar xj && \
+RUN curl http://download.owncloud.org/community/owncloud-latest.tar.bz2 | tar xj && \
 	mkdir -p owncloud/data/tmp && \
 	chmod 770 owncloud/data && \
 	mv owncloud/* owncloud/.htaccess /srv/http/ && \
