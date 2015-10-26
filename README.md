@@ -7,7 +7,7 @@ Enable port 80 and/or 443
 
 From Docker Index
 ```
-docker pull usertaken/archlinux-owncloud-stable
+docker pull magdeoz/archlinux-owncloud-stable
 ```
 
 Build Yourself
